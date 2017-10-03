@@ -1,0 +1,11 @@
+<nav class="product-filter">
+    <h1>Faces</h1>
+    <div class="sort">
+        <label>Sort:</label>
+        <div class="collection-sort">
+            <label>
+                <select ng-options="el for el in $ctrl.sortOptions" ng-model="$ctrl.sortBy" ng-change="$ctrl.change()"></select>
+            </label>
+        </div>
+    </div>
+</nav>

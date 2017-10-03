@@ -1,0 +1,38 @@
+{
+  "name": "discount-ascii-warehouse",
+  "version": "0.2.0",
+  "description": "For all your ascii needs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run unbundle && NODE_ENV=development node .",
+    "bundle": "jspm bundle app.js ./static/build.js --inject --minify",
+    "unbundle": "jspm unbundle",
+    "serve": "NODE_ENV=production node ."
+  },
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "cool-ascii-faces": "~1.3.3",
+    "ecstatic": "~0.5.4"
+  },
+  "devDependencies": {
+    "jspm": "0.16.30"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "static"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.5.0",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.18",
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "text": "github:systemjs/plugin-text@^0.0.7"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "clean-css": "npm:clean-css@^3.4.10",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

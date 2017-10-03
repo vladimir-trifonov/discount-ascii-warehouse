@@ -1,0 +1,30 @@
+@import url("http://fonts.googleapis.com/css?family=Work+Sans");
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    cursor: default
+}
+
+body {
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+#main {
+    max-width: 1050px;
+    margin: 0 auto;
+}

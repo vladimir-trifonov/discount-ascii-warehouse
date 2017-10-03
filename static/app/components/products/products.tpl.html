@@ -1,0 +1,11 @@
+<div class="products">
+    <sort-by on-change="$ctrl.load(sortBy)" sort-options="$ctrl.sortOptions"></sort-by>
+    <div class="products-list" scroll-load on-bottom-reached="$ctrl.load()" treshold="200">
+        <span ng-repeat="product in $ctrl.products track by product.id">
+	            <product-item product="product"></product-item>
+	            <product-ad ng-if="($index+1)%$ctrl.adAfter==0"></product-ad>
+	        </span>
+    </div>
+    <loading></loading>
+    <end-of-data></end-of-data>
+</div>
